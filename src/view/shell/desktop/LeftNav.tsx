@@ -106,7 +106,7 @@ function ProfileCard() {
         <Menu.Root>
           <Menu.Trigger label={_(msg`Switch accounts`)}>
             {({props, state, control}) => {
-              const active = state.hovered || state.focused || control.isOpen
+              const active = state.hovered || control.isOpen
               return (
                 <Button
                   label={props.accessibilityLabel}
